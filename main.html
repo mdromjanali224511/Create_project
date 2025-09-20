@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main iada</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .color{
+            background: white;
+            box-shadow: silver;
+            border-radius: 10px;
+            padding: 5px;
+            width: 100%;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body class="bg-black">
+     <header class="bg-white max-w-md mx-10 py-10">
+        <nav class="flex justify-around">
+            <div class="flex items-center ">
+<div>
+     <img class="block" src="./images/Group.png" alt="">
+</div>
+            <div>
+                <b>$ <span id="mainBalance">2500</span></b><br>
+            <h2>Available Balance</h2>
+            </div>
+            </div>
+            <div>
+                <button id="Logoutbtn" class="btn">Log Out</button>
+            </div>
+        </nav>
+        <hr class="text-gray-500 my-5">
+<!-- navmanu end -->
+
+<section class="mx-10">
+    <div>
+        <h1 class="text-2xl font-bold mb-3">Welcome to payoo!</h1>
+    <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, natus!</p>
+    </div>
+    <!-- maindiv -->
+     <div class="grid gap-4 grid-cols-3">
+
+<button id="addmoneybtn" class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>Add money</strong>
+</button>
+<button id="cashoutbtn" class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>cashout</strong>
+</button>
+<button class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>transfer money</strong>
+</button>
+<button class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>get bonus</strong>
+</button>
+<button class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>paybill</strong>
+</button>
+<button class="bg-gray-200 border-green-100 rounded-xl shadow-xl p-4">
+      <img class="mx-auto my-2" src="./images/money1.png" alt="">
+    <strong>transition</strong>
+</button>
+     </div>
+</section>
+
+<!-- Addmoney section -->
+
+<section class="bg-white shadow-2xl p-5 rounded-xl my-10 mx-10">
+    
+    <form id="addmoneyform" action="">
+        <h1 class="my-5 font-bold text-2xl
+    ">Add Money</h1>
+        <label for="">Select a Bank
+            <select class="bg-gray-400 rounded-xl p-3 w-full" name="" id="">
+                <option value="nagad">nagad</option>
+                <option value="nagad">bkash</option>
+                <option value="nagad">rocket</option>
+                <option value="nagad">upay</option>
+            </select>
+            
+        </label>
+        <label for="">bank acount number
+            <input value="01990422575" id="acountInput" class="bg-gray-400 rounded-xl p-3 w-full" type="number">
+        </label>
+        <label for="">amount to add
+            <input id="amountinput" class="bg-gray-400 rounded-xl p-3 w-full" type="number">  
+        </label>
+        <label for="">pin number
+            <input value="224511" id="pin" class="bg-gray-400 rounded-xl p-3 w-full" type="number">
+        </label>
+         <button id="addmoneybtnn" class="bg-blue-500 my-5 rounded-xl w-full p-3">Add money</button>
+    </form>
+   
+</section>
+
+<!-- cashoutfrom -->
+
+<section class="bg-white shadow-2xl p-5 rounded-xl my-10 mx-10">
+    
+    <form id="cashoutform" action="">
+        <h1 class="my-5 font-bold text-2xl
+    ">cashout</h1>
+     
+        <label for="">Agent number
+            <input value="01990422575" id="cashoutAgentNumber" class="bg-gray-400 rounded-xl p-3 w-full" type="number">
+        </label>
+        <label for="">amount 
+            <input id="cashoutamount" class="bg-gray-400 rounded-xl p-3 w-full" type="number">
+        </label>
+        <label for="">pin number
+            <input value="224511" id="cashoutpin" class="bg-gray-400 rounded-xl p-3 w-full" type="number">
+        </label>
+        <button id="cashoutbtnn" class="bg-blue-500 my-5 rounded-xl w-full p-3">Add money</button>
+    </form>
+</section>
+
+<section class="bg-white shadow-2xl p-5 rounded-xl my-10 mx-10">
+<h1>Transition History</h1>
+<div id="maincontainer">
+
+</div>
+
+</section>
+     </header>
+     <script>
+ 
+     </script>
+     <script src="./toggole.js "></script>
+</body>
+</html>
