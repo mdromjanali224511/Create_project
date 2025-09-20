@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>createPpoject</title>
+    <title>create_poject_for Shorif</title>
        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -28,7 +28,30 @@
         </section>
 
     </header>
+    <script>
+document.getElementById('loginbutton').addEventListener('click',function(event){
+    event.preventDefault()
     
-  <script src="./toggole.js"></script>
+    const mobile=document.getElementById('mobilenum').value;
+    
+const pin=converterId('pinn')
+console.log(typeof mobile)
+    if(mobile.length === 11 && pin===1122){
+      
+       window.location='main.html'
+    }
+    else{
+        console.log('this nai');
+        
+    }
+})
+function converterId(id){
+    const coverterIdvalue=document.getElementById(id).value
+    const converter=parseFloat(coverterIdvalue);
+    return converter;
+
+}
+    </script>
+  
 </body>
 </html>

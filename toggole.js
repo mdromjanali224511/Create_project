@@ -1,26 +1,4 @@
 // login
-document.getElementById('loginbutton').addEventListener('click',function(event){
-    event.preventDefault()
-    
-    const mobile=document.getElementById('mobilenum').value;
-    
-const pin=converterId('pinn')
-console.log(typeof mobile)
-    if(mobile.length === 11 && pin===1122){
-      
-       window.location='main.html'
-    }
-    else{
-        console.log('this nai');
-        
-    }
-})
-function converterId(id){
-    const coverterIdvalue=document.getElementById(id).value
-    const converter=parseFloat(coverterIdvalue);
-    return converter;
-
-}
 
 
 
